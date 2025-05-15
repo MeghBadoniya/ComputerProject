@@ -1,5 +1,5 @@
-## Computer Project
-# Difference between Object and Class (2 Marks)
+# Computer Project
+## Difference between Object and Class (2 Marks)
 
 | Class                            | Object                               |
 |----------------------------------|---------------------------------------|
