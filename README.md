@@ -189,3 +189,94 @@ double d = Double.parseDouble(x);
 ```java
 throws
 ```
+
+### What are Library Classes? (2 Marks)
+
+Library classes are pre-written classes provided by Java that programmers can use to perform common tasks without writing code from scratch.
+
+### Example:
+```java
+import java.util.Scanner;
+
+Scanner input = new Scanner(System.in);
+```
+
+## Q6  
+### Program to check Special Number (Using main function only)
+
+```java
+import java.util.Scanner;
+
+public class SpecialNumber {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+        int temp = num, sum = 0;
+
+        while (temp > 0) {
+            int digit = temp % 10;
+            int fact = 1;
+            for (int i = 1; i <= digit; i++) {
+                fact *= i;
+            }
+            sum += fact;
+            temp /= 10;
+        }
+
+        if (sum == num)
+            System.out.println(num + " is a special number.");
+        else
+            System.out.println(num + " is not a special number.");
+    }
+}
+```
+
+## Q9  
+### Menu driven program for:
+
+- (a) Print series 0, 3, 7, 15, 24 ... n terms  
+- (b) Find sum of series S = 1/2 + 3/4 + 5/6 + ... + 19/20  
+
+```java
+import java.util.Scanner;
+
+public class SeriesMenu {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Menu:");
+        System.out.println("1. Print series 0, 3, 7, 15, 24 ... n terms");
+        System.out.println("2. Find sum of series 1/2 + 3/4 + 5/6 + ... + 19/20");
+        System.out.print("Enter your choice (1 or 2): ");
+        int choice = sc.nextInt();
+
+        switch(choice) {
+            case 1:
+                System.out.print("Enter number of terms (n): ");
+                int n = sc.nextInt();
+                int val = 0;
+                for (int i = 0; i < n; i++) {
+                    System.out.print(val + " ");
+                    if (i == 0)
+                        val = 3;
+                    else
+                        val = val + i + 3;
+                }
+                System.out.println();
+                break;
+
+            case 2:
+                double sum = 0.0;
+                for (int i = 1; i <= 19; i += 2) {
+                    sum += (double) i / (i + 1);
+                }
+                System.out.printf("Sum of series = %.2f\n", sum);
+                break;
+
+            default:
+                System.out.println("Invalid choice.");
+        }
+    }
+}
+```
