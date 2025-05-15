@@ -14,6 +14,7 @@ A **token** in Java refers to the smallest individual unit in a program. Tokens 
 ### Example:
 ```java
 int number = 10;
+```
 
 ## Q3 : Difference between Entry Controlled Loop and Exit Controlled Loop (2 Marks)
 
