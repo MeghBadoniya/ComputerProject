@@ -32,3 +32,14 @@ int number = 10;
 | Performs division and gives the quotient (result without remainder). | Performs division and gives the remainder. |
 | Example: `10 / 3` results in `3`.   | Example: `10 % 3` results in `1`.    |
 
+## Q2
+
+### Total Size of an Array (2 Marks)
+
+- If `arr[4]` is a **char** array:  
+  Each `char` is 2 bytes in Java.  
+  Total size = 4 × 2 = **8 bytes**
+
+- If `arr[4]` is a **float** array:  
+  Each `float` is 4 bytes in Java.  
+  Total size = 4 × 4 = **16 bytes**
