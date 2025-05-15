@@ -1,6 +1,7 @@
-# Computer Project
-# 2011 Paper
-## Q1 
+# Computer Project  
+# 2011 Paper  
+
+## Q1  
 
 ### Difference between Object and Class (2 Marks)
 
@@ -49,7 +50,7 @@ int number = 10;
 The `Scanner` class is contained in the package:
 
 ```java
-java.util
+java.util;
 ```
 
 ## Unit of Class Called When Object is Created (2 Marks)
@@ -66,8 +67,125 @@ System.out.println(n.substring(0, 8).concat(m.substring(9)));
 System.out.println(n.endsWith("e"));
 ```
 
-```
+```text
 ComputerApplications
 false
 ```
 
+## Q3
+
+### (d) Output (2 Marks)
+
+```java
+System.out.println(Character.isUpperCase('R'));
+System.out.println(Character.toUpperCase('j'));
+```
+
+```text
+true
+J
+```
+
+### (e) Role of keyword void in declaring functions (2 Marks)
+
+```java
+// 'void' indicates the method returns no value.
+void exampleMethod() {
+    // method body
+}
+```
+
+### (a) Loop execution and output analysis (3 Marks)
+
+```java
+int p = 200;
+int t = 0;
+while(true) {
+    if(p < 100)
+        break;
+    p = p - 20;
+    t++;
+}
+System.out.println(p);
+```
+
+Output:
+```text
+80
+```
+
+### (b) Output of given code (3 Marks)
+
+(i)
+```java
+int k = 5, j = 9;
+k += ++j + k;
+System.out.println("k=" + k);
+System.out.println("j=" + j);
+```
+
+Output:
+```text
+k=24
+j=10
+```
+
+(ii)
+```java
+double b = -15.6;
+double a = Math.rint(Math.abs(b));
+System.out.println("a=" + a);
+```
+
+Output:
+```text
+a=16.0
+```
+
+### (c) Constructor Overloading with Example (3 Marks)
+
+```java
+class Example {
+    int x;
+
+    Example() { // Default constructor
+        x = 0;
+    }
+
+    Example(int a) { // Parameterized constructor
+        x = a;
+    }
+}
+```
+
+### (d) Prototype of function search (2 Marks)
+
+```java
+int search(String sentnc, String wrd);
+```
+
+### (e) Expression in Java (2 Marks)
+
+```java
+z = x + y / (5 * x * 3) + 2 * y;
+```
+
+### (f) Statements on String (2 Marks)
+
+(i) Find and display position of last space in string `s`:
+
+```java
+System.out.println(s.lastIndexOf(' '));
+```
+
+(ii) Convert string variable `x` to double:
+
+```java
+double d = Double.parseDouble(x);
+```
+
+### (g) Keyword that informs error in I/O operation (2 Marks)
+
+```java
+throws
+```
