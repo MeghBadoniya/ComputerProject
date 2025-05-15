@@ -55,3 +55,18 @@ java.util
 ## Unit of Class Called When Object is Created (2 Marks)
 
 The **constructor** of a class is called when an object of the class is created.
+
+## Output of the Given Code (2 Marks)
+
+```java
+String n = "Computer Knowledge.";
+String m = "Computer Applications";
+
+System.out.println(n.substring(0, 8).concat(m.substring(9)));
+System.out.println(n.endsWith("e"));
+```
+
+```ComputerApplications
+false
+```
+
