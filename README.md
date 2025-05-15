@@ -51,3 +51,7 @@ The `Scanner` class is contained in the package:
 ```java
 java.util
 ```
+
+## Unit of Class Called When Object is Created (2 Marks)
+
+The **constructor** of a class is called when an object of the class is created.
