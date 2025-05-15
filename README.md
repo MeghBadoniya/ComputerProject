@@ -43,3 +43,11 @@ int number = 10;
 - If `arr[4]` is a **float** array:  
   Each `float` is 4 bytes in Java.  
   Total size = 4 × 4 = **16 bytes**
+
+### Package Containing Scanner Class (2 Marks)
+
+The `Scanner` class is contained in the package:
+
+```java
+java.util
+```
