@@ -14,3 +14,10 @@ A **token** in Java refers to the smallest individual unit in a program. Tokens 
 ### Example:
 ```java
 int number = 10;
+
+## Q3 : Difference between Entry Controlled Loop and Exit Controlled Loop (2 Marks)
+
+| Entry Controlled Loop                       | Exit Controlled Loop                        |
+|---------------------------------------------|---------------------------------------------|
+| Condition is checked before entering the loop body. | Condition is checked after executing the loop body. |
+| Loop body may not execute if the condition is false. | Loop body executes at least once regardless of the condition. |
