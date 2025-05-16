@@ -100,3 +100,56 @@ public class ISBNCheck {
     }
 }
 ``` 
+
+## Q9
+
+```java
+import java.util.Scanner;
+
+public class MenuProgram {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("1. Check Composite Number");
+        System.out.println("2. Find Smallest Digit");
+        System.out.print("Enter your choice: ");
+        int choice = sc.nextInt();
+
+        switch (choice) {
+            case 1:
+                System.out.print("Enter a number: ");
+                int num = sc.nextInt();
+                boolean isComposite = false;
+                if (num > 3) {
+                    for (int i = 2; i <= num / 2; i++) {
+                        if (num % i == 0) {
+                            isComposite = true;
+                            break;
+                        }
+                    }
+                }
+                if (isComposite)
+                    System.out.println("Composite Number");
+                else
+                    System.out.println("Not a Composite Number");
+                break;
+
+            case 2:
+                System.out.print("Enter an integer: ");
+                int n = sc.nextInt();
+                n = Math.abs(n);
+                int smallest = 9;
+                while (n > 0) {
+                    int d = n % 10;
+                    if (d < smallest)
+                        smallest = d;
+                    n /= 10;
+                }
+                System.out.println("Smallest digit is " + smallest);
+                break;
+
+            default:
+                System.out.println("Invalid choice");
+        }
+    }
+}
+``` 
